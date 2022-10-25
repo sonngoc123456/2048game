@@ -73,6 +73,7 @@ const BoardView = () => {
     setPointApi()
         .then(res => {
           console.log(res.data)
+              setBoard(new Board())
         })
         .catch(err => console.error(err.message));
   };
